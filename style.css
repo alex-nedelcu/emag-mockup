@@ -325,6 +325,12 @@ ul {
     }
 }
 
+@media (max-width: 600px) {
+    .boxes .container .box {
+        padding: 10px 5px;
+    }
+}
+
 @media (max-width: 1000px) {
     .header, .aux {
         display: none;
