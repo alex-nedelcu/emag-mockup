@@ -1,3 +1,3 @@
-# Emag website mockup
+# eMAG website mockup
 
-#### HTML and CSS based copy of the [Emag](https://www.emag.ro) website
+#### HTML and CSS based copy of the [eMAG](https://www.emag.ro) website
