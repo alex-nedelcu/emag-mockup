@@ -46,11 +46,11 @@ ul {
 
 .navbar .search {
     width: 50%;
-    height: 70%;
+    height: 62%;
     position: relative;
     align-self: center;
     display: flex;
-    padding: 0 15px;
+    padding: 0 25px 0 12px;
 }
 
 .navbar .search .search-term {
@@ -203,9 +203,30 @@ ul {
 }
 
 .main .container .dropdown .dropdown-item {
+    width: 100%;
     color: #222222;
-    font-size: 13px;
+    font-size: 14px;
     flex: 1;
+    padding: 5px 15px 3px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.main .container .dropdown .dropdown-item .icon {
+    width: 10%;
+    height: 100%;
+}
+
+.main .container .dropdown .dropdown-item .text {
+    width: 90%;
+    height: 100%;
+    padding-left: 5px;
+}
+
+.main .container .dropdown .dropdown-item .text:hover {
+    cursor: pointer;
 }
 
 .main .container .big-picture {
@@ -222,7 +243,13 @@ ul {
     height: 100%;
 }
 
+.main .fa {
+    font-size: 125%;
+    padding-right: 5px;
+}
+
 /*************************** main end ***************************/
+
 
 /*************************** boxes ***************************/
 .boxes {
@@ -298,17 +325,37 @@ ul {
     }
 }
 
-@media (max-width: 920px) {
-    .boxes .container {
-        display: block;
-        text-align: center;
+@media (max-width: 1000px) {
+    .header, .aux {
+        display: none;
     }
 
-    .boxes .container .box {
+    .boxes .container .box .content {
+        display: none;
+    }
+
+    .boxes .container {
+        justify-content: space-around;
+    }
+
+    .main .container .dropdown .dropdown-item .text {
+        display: none;
+    }
+
+    .main .container .dropdown .dropdown-item {
         justify-content: center;
-        font-size: 12px;
-        flex-direction: column;
-        padding-top: 45px;
+    }
+
+    .main .container .dropdown {
+        display: none;
+    }
+
+    .main .container .big-picture {
+        width: 100%;
+    }
+
+    .header .container .emag-help {
+        display: none;
     }
 }
 
